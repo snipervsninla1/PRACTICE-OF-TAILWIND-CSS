@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <link rel="stylesheet" href="tailwind.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class=" flex flex-col">
+
+<div>
+    <!-- placeholder text -->
+
+<label class=" relative block">
+<span class=" sr-only"> search</span>
+<span class=" absolute inset-y-0 left-0 flex items-center pl-2 "></span>
+<svg class="h-5 w-5 fill-gray-300" viewBox="0 0 20 20 "> </svg>
+
+<input class=" placeholder:italic placeholder:text-gray-400 block w-full border border-gray-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="search for anything..." type="text" name="search"/>
+
+</label>
+
+</div>
+
+
+
+<div>
+<button class=" bg-red-400 hover-red-400 active:bg-red-600 focus:outline-none focus-ring focus:ring-red-300">
+  save changes
+  </button>
+</div>
+
+<div>
+  <!-- first ,last,add and even -->
+  
+  <ul role="list" class="p-6 divide-y divide-gray-200">
+       <li class="flex py-4 first:pt-0 last:pb-0">
+          <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt="" />
+          <div class="ml-3 overflow-hidden">
+            <p class="text-sm font-medium text-gray-900">{person.name}</p>
+            <p class="text-sm text-gray-500 truncate">{person.email}</p>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+    <!-- form states -->
+  <div>
+    <form>
+      <label class="block">
+        <span class="block text-sm font-medium text-gray-700">Username</span>
+        <input type="email" class="peer ..."/>
+        <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+          Please provide a valid email address.
+        </p>
+      </label>
+    </form>
+  </div> <br>
+
+
+  <div>
+      <!-- styling based on parent sate -->
+  
+  <a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-whitering-1 ring-gray-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+    <div class="flex items-center space-x-3">
+      <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+      <h3 class="text-gray-900 group-hover:text-blue-400 text-sm font-semibold">New project</h3>
+    </div>
+    <p class="text-gray-500 group-hover:text-blue-400 text-sm">Create a new project from a variety of starting templates.</p>
+  </a>
+</div><br>
+
+<div>
+  <!-- file input buttons -->
+
+  <form class="flex items-center space-x-6">
+    <div class="shrink-0">
+      <img class="h-16 w-16 object-cover rounded-full" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80" alt="Current profile photo" />
+    </div>
+    <label class="block">
+      <span class="sr-only">Choose profile photo</span>
+      <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 "/>
+    </label>
+  </form>
+</div><br>
+
+
+<div>
+
+  <!-- marqueurs de liste -->
+  <ul role="list" class=" marker:text-red-400 list-disc pl-5 space-y-3 text-gray-500">
+    <li>5 cups chopped porcini mushrooms</li>
+    <li> 1/2 cup of olive oil</li>
+    <li> 3lb of celery</li>
+  </ul>
+</div> <br>
+
+
+<div>
+<!-- text surligné -->
+
+<div class=" selection:bg-red-300 selection:text-red-900">
+  <p> 
+    So I started to walk into the water. I won't lie to you boys, I was
+    terrified. But I pressed on, and as I made my way past the breakers
+    a strange calm came over me. I don't know if it was divine intervention
+    or the kinship of all living things but I tell you Jerry at that moment,
+    I
+    <em>was</em>a marine biologist.
+  </p>
+</div>
+
+
+</div>
+
+
+</body>
+</html>

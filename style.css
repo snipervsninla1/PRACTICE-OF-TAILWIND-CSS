@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{   
+    body{
+        background-image: url('landing pages locko project\landing pages locko project\04.web\tof locko web.jpg');
+        background-size: cover; background-position: center; background-attachment: fixed;
+    }
+    
+.btn{
+    @apply rounded-sm
+}
+
+}
